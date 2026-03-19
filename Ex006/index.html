@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soma de Vetores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="card">
+  <span class="label-tag">Algoritmo</span>
+  <h1>Soma de <span>Vetor</span></h1>
+  <p class="subtitle">Insira os números, calcule a soma total.</p>
+
+  <p class="section-label">Adicionar número</p>
+  <div class="input-row">
+    <input type="number" id="numInput" placeholder="ex: 42" />
+    <button class="btn-add" onclick="adicionarNumero()">+ Adicionar</button>
+    <button class="btn-clear" onclick="limpar()">Limpar</button>
+  </div>
+
+  <p class="section-label">Vetor atual</p>
+  <div class="chips" id="chips">
+    <span class="empty-hint" id="emptyHint">nenhum número ainda…</span>
+  </div>
+
+  <button class="btn-calc" onclick="calcularSoma()">Calcular Soma</button>
+  <p class="error-msg" id="errorMsg">⚠ Adicione pelo menos um número ao vetor.</p>
+
+  <div class="result-box" id="resultBox">
+    <p class="result-label">Resultado</p>
+    <p class="result-value" id="resultValue">—</p>
+    <p class="result-detail" id="resultDetail"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

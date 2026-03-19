@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Filtro de Pessoas</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <p class="tag">Filtro de Pessoas</p>
+      <h1>Mulheres <em>com menos</em><br/>de 30 anos</h1>
+      <p class="desc">Ordenadas alfabeticamente pelo nome.</p>
+    </header>
+
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Vetor de entrada</span>
+        <span class="badge" id="totalBadge">0 pessoas</span>
+      </div>
+      <div id="inputList" class="input-list"></div>
+      <button class="btn-run" onclick="executarFiltro()">Executar filtro</button>
+    </div>
+
+    <div class="result-panel" id="resultPanel">
+      <div class="panel-header">
+        <span class="panel-title">Resultado</span>
+        <span class="badge accent" id="resultBadge">0 encontradas</span>
+      </div>
+      <div id="resultDiv" class="result-list"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
