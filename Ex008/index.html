@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arco-íris</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <p class="tag">Cores do Arco-íris</p>
+      <h1>Completar<br/><span>vetor de cores</span></h1>
+      <p class="desc">Adicione cores ao vetor e veja quais do arco-íris estão faltando.</p>
+    </header>
+
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Adicionar cor</span>
+      </div>
+      <div class="input-row">
+        <input type="text" id="colorInput" placeholder="ex: Blue, Pink, Red..."/>
+        <button class="btn-add" onclick="adicionarCor()">+ Adicionar</button>
+        <button class="btn-clear" onclick="limpar()">Limpar</button>
+      </div>
+
+      <div class="panel-header" style="margin-top: 1rem;">
+        <span class="panel-title">Vetor atual</span>
+        <span class="badge" id="inputBadge">0 cores</span>
+      </div>
+      <div id="inputColors" class="color-grid">
+        <span class="empty-hint">nenhuma cor adicionada ainda…</span>
+      </div>
+
+      <button class="btn-run" onclick="executar()">Completar arco-íris</button>
+    </div>
+
+    <div class="panel result-panel" id="resultPanel">
+      <div class="panel-header">
+        <span class="panel-title">Vetor corrigido</span>
+        <span class="badge success" id="resultBadge">0 cores</span>
+      </div>
+      <div id="addedInfo" class="added-info"></div>
+      <div id="resultColors" class="color-grid"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
